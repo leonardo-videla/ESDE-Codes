@@ -1,0 +1,1 @@
+function [sp0, sp1,r]=decode(n)    sp0=1;  sp1=1;  r=0;  if (n==1)    return;  else if (n==2)        r=1;        return;       endif  endif    m=n-1;    while m>1    r=mod(m, 2);    if r==0      sp0++;    else        sp1++;    endif    m=floor(m/2); endwhileendfunction

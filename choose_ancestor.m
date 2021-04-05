@@ -1,0 +1,1 @@
+function father=choose_ancestor (seq, candidates)  n=length(seq);  s=sum (candidates);  u=zeros(n, 1);  for j=2:n   u(j)=u(j-1)+candidates (j)/s;    endfor  p=rand(1);  s=u(1);  j=2;  while p > s     s=s+u(j);    j++;  endwhile   father=1;  for k=1:j-1    if candidates (k) >0      father=k;    endif  endfor  endfunction

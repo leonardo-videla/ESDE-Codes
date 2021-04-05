@@ -1,0 +1,1 @@
+function n=code(seq)  n=1;  l=length(seq);  for j=2:l    n+=seq(j)*2^(j-2);  endfor  n=n+2^(l-1);endfunction    

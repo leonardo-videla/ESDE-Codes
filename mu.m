@@ -1,0 +1,1 @@
+function l=mu(n)    l=0.45*(n); endfunction 

@@ -1,0 +1,1 @@
+function step=choose_step (seq, x)  q=rand(1);  if q<lambda (seq, x, -1)/lambda_total(seq, x)    step=-1;  elseif q > lambda (seq, x, -1)/lambda_total(seq, x) && q <(lambda (seq, x, -1)+lambda(seq, x, 0))/lambda_total(seq, x)    step=0;  else    step=1;  endifendfunction

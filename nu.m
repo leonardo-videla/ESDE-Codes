@@ -1,0 +1,1 @@
+function l=nu(n)    if(n==3)      l=0;    else      l=0.35*(n);    endifendfunction
